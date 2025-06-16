@@ -1,0 +1,279 @@
+ @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+ background: linear-gradient(305deg, #33ff00, #009900 , #000000 );
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    position: fixed;
+    z-index: 1;
+    padding:40px;
+}
+
+.container__Menu{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Menu h1{
+    font-family: "Permanent Marker", cursive;
+    position: relative;
+    font-size:90px;
+    right:750px;
+    top:20px;
+    left: 30px;
+    color: #ffffff;
+}
+
+.Menu{
+    display: flex;
+    align-items: center;
+}
+
+.Menu ul{
+    display: flex;
+}
+
+.Menu ul li{
+    list-style: none;
+    margin-left: 36px;
+}
+
+.Menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+#selected{
+    background:#27d80f;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+
+.Menu nav img{
+ display:none;
+}
+
+.Menu #Mini_Menu{
+    display:none;
+
+}
+
+/*Tapa*/
+
+
+.container__Textual{
+    width: 100%;
+    height: 800px;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+
+.Tapa{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__Textual .texto{
+    max-width: 400px;
+    
+}
+
+.container__Textual .texto h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+}
+
+.container__Textual .texto p{
+    font-size: 18px;
+    margin-top: 40px;
+     color: white;
+}
+
+.container__Textual .texto a{
+    padding: 18px 80px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background: linear-gradient(to right, #04970c,#1eff00);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px #00ffff;
+    transition: all 300ms;
+}
+
+.container__Textual .texto a:hover{
+    box-shadow: 1px 1px 30px -6px #ff0101;
+}
+
+a{
+    position: relative;
+    top: 30px;
+}
+
+.container__Textual .MandoLogo img{
+    width: 700px;
+    height:400px;
+    animation: move-vector 2s linear infinite;
+}
+
+@keyframes move-vector {
+    0%{
+        transform: translateY(15px);
+    }50%{
+        transform: translateY(0px);
+    }100%{
+        transform: translateY(15px);
+    }
+}
+
+/*Haciendole a la mamada*/
+
+
+@media screen and (max-width:1700px) {
+    
+
+.container__Textual{
+    background-position:50%;
+}
+
+}
+
+
+@media screen and (Max-width:1200px){
+    
+header{
+    padding:40px;
+}
+
+.container__Textual{
+    background-position:-100px;
+}
+
+.container__Textual .MandoLogo img{
+    width: 500px;
+}
+
+}
+
+@media screen and (max-width:1020px){
+
+.container__Textual{
+    background-image: url("");
+    background: linear-gradient(305deg, #33ff00, #009900 , #000000 );
+    background-color: #FD8986;
+}
+
+
+.container__Textual .MandoLogo img{
+    display: none;
+}
+
+.container__Textual .texto{
+    max-width: 800px;
+}
+
+}
+
+@media screen and (max-width:720px){
+
+.Menu nav{
+    position:fixed;
+    top:0;
+    right:-250px;
+    background: white;
+    width: 250px;
+    height: 100vh;
+    padding:40px;
+    z-index:1; 
+    transition: all 300ms;
+}    
+    
+
+.Menu ul{
+ flex-direction: column;
+ margin-top: 40px;
+}
+
+.Menu ul li{
+ margin-top:30px;
+ margin-left:0;
+}
+
+.Menu ul li a{
+    color: #000000;
+}
+
+.Menu h1{
+position: relative;
+font-size:20px;
+right:10px;
+color:black;
+}
+
+#selected{
+    background:none;
+    padding: 0;
+    border-radius: none;
+    color:#4be01d;
+
+}
+
+#Sombra{
+ position: fixed;
+ top: 0;
+ left: 0;
+ width:100%;
+ height:100vh;
+ background: rgba(0,0,0,0.5);
+ display:none;
+
+}
+
+.Menu #Mini_Menu{
+    display:flex;
+    align-items: center;
+    justify-content: center;  
+    width:50px;
+    height:50px;
+    background: rgba(225,225,225,0.1);
+    font-size: 24px;
+    border-radius:50px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.Menu #Mini_Menu:hover{
+    background: rgba(255,255,255,0.2);
+
+}
+
+}
