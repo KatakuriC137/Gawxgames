@@ -138,25 +138,6 @@ left:45px;
 
 
 
-.Container_Volver{
-position: relative;
-bottom:100px;
-right:1030px;
-background-color:white;
-border: 5px solid rgb(0, 0, 0);
-width:70px;
-height:30px;
-font-size:19px;
-cursor: pointer;
-}
-
-.Container_Volver a{
-  position: relative;
-  left:10px;
-  top:5px;
-  color: red;
-}
-
 @media screen and (max-width:720px){
 
  
@@ -313,11 +294,7 @@ left:50px;
 }
 
 
-.Container_Volver{
-position: relative;
-right:255px;
-bottom:1160px;
-}
+
 
 }  
   

@@ -4,7 +4,7 @@
   height: 500px;
   perspective: 1000px; 
   right: 920px;
-  top: 10px;
+  top:10px;
   cursor: pointer;
 }
 
@@ -62,24 +62,24 @@ right: 300px;
 .Texto{
 position: relative;
 font-size:22px;
-left: 440px;
+left: 420px;
 top: 30px;
-color:rgb(255, 0, 0);
+color:rgb(114, 67, 224);
 
 }
 
 .Caracteristicas{
   position: relative;
   font-size:22px;
-  left: 440px;
+  left: 420px;
   top: 60px;
-  color:rgb(247, 0, 255);
+  color:rgb(114, 67, 224);
 }
 
 
 .Descripcion{
 position: relative;
-color:red;
+color:rgb(219, 25, 25);
 font-size:20px;
 width:400px;
 height:200px;
@@ -90,13 +90,12 @@ bottom:370px;
 .boton{
 position: relative;  
 background-color: rgb(9, 255, 9);
-cursor:pointer;
 font-size:50px;
 bottom:60px;
 left:40px;
 width:350px;
+cursor: pointer;
 }
-
 
 .Logos{
 position: relative;
@@ -139,6 +138,24 @@ left:45px;
 
 
 
+.Container_Volver{
+position: relative;
+bottom:100px;
+right:1030px;
+background-color:white;
+border: 5px solid rgb(0, 0, 0);
+width:70px;
+height:30px;
+font-size:19px;
+cursor: pointer;
+}
+
+.Container_Volver a{
+  position: relative;
+  left:10px;
+  top:5px;
+  color: red;
+}
 
 
 @media screen and (max-width:720px){
@@ -170,7 +187,7 @@ left:45px;
   height: 300px;
   perspective: 1000px; 
   left:112px;
-  top: 50px;
+  top: 30px;
   display: flex;
   flex-direction: column;
   transition: all 300ms;
@@ -230,25 +247,25 @@ right: 300px;
 
 .Texto{
 position: relative;
-font-size:19px;
+font-size:17px;
 left:27px;
-top:420px;
-color:red;
+top:395px;
+color:rgb(255, 0, 0);
 }
 
 
 .Caracteristicas{
   position: relative;
-  font-size:19px;
-  left: 190px;
-  top: 256px;
-  color:rgb(247, 0, 255);
+  font-size:17px;
+  left: 210px;
+  top: 246px;
+  color:rgb(255, 0, 0);
 }
 
 
 .Descripcion{
 position: relative;
-color:red;
+color:rgb(255, 0, 0);
 font-size:18px;
 width:400px;
 height:200px;
@@ -297,5 +314,10 @@ left:50px;
 }
 
 
+.Container_Volver{
+position: relative;
+right:255px;
+bottom:1126px;
+}
 
-}  
+}

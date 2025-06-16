@@ -1,33 +1,19 @@
-// JS con GSAP (suponiendo que ya cargaste GSAP)
-const slides = document.querySelectorAll('.slide');
-const hero = document.querySelector('.hero');
-const titleEl = document.getElementById('movie-title');
-const descEl = document.getElementById('movie-desc');
+ document.getElementById("Mini_Menu").addEventListener("click", mostrar_Menu);
 
-slides.forEach((slide, i) => {
-  slide.addEventListener('click', () => {
-    // desactivar anteriores
-    document.querySelector('.slide.active').classList.remove('active');
-    slide.classList.add('active');
-    // animar carrusel
-    gsap.to('.carousel', {
-      x: () => {
-        const offset = (i - Math.floor(slides.length/2)) * (slide.offsetWidth + 20);
-        return -offset;
-      },
-      duration: .8,
-      ease: 'power3.out'
-    });
-    // cambiar fondo
-    const bg = slide.dataset.bg;
-    gsap.to(hero, { backgroundImage: bg, duration: .8, ease: 'power3.out' });
-    // animar texto
-    gsap.fromTo([titleEl, descEl], 
-      { y: 20, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.1, duration: .6 }
-    );
-    // actualizar texto content
-    titleEl.textContent = slide.dataset.title;
-    descEl.textContent = slide.dataset.desc;
-  });
-});
+ document.getElementById("Sombra").addEventListener("click", ocultar_Menu);
+
+ nav = document.getElementById("nav");
+background_menu=document.getElementById("Sombra")
+
+function mostrar_Menu(){
+
+    nav.style.right= "0px";
+    background_menu.style.display="block";
+}
+
+
+function ocultar_Menu(){
+
+    nav.style.right= "-250px";
+    background_menu.style.display="none";
+}
