@@ -10,7 +10,6 @@
 html, body {
   height: 100%;
   position: relative;
-  /* Quitar esto en responsive */
 }
 
 .Body {
@@ -71,7 +70,7 @@ html, body {
   font-size: 30px;
 }
 
-/* --- RESPONSIVE --- */
+
 @media screen and (max-width: 768px) {
   .Principal {
     left: 10px;
