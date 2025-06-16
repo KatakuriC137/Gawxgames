@@ -1,0 +1,1335 @@
+body{
+ background: linear-gradient(to right, #1ed60d , #2a0bda );
+}
+
+
+.Container_Menu{
+position: relative;
+background-color:blue;
+width:300px;
+height:100px;
+left:150px;
+border: 5px solid black;
+top:50px;
+transition: all 300ms;
+}
+
+
+
+.Texto{
+position: relative;
+color:white;
+text-align: center;
+font-size:30px;
+left:10px;
+top:30px;
+display: block;
+}
+
+.Container_Advertencia{
+    position: relative;
+    bottom:120px;
+    background-color: rgb(132, 6, 250);
+    border: 5px solid black;
+    width:600px;
+    height:150px;
+    left:650px;
+    transition: all 300ms; 
+}
+
+.Termino{
+ position: relative;
+ color:white;
+ text-align: center;
+ font-size:20px;
+ top:10px;
+ transition: all 300ms;
+}
+
+.Container_volver{
+ position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid rgb(248, 248, 248);
+ width:100px;
+ height:50px;
+ text-align: center;
+ top:100px;
+ left:150px;
+ transition: all 300ms;
+}
+
+.Container_volver a{
+position: relative;  
+color: aliceblue;
+text-decoration: none;
+top:15px;
+}
+
+.Container_Ubicacion{
+   position: relative;
+   background-color: rgb(132, 6, 250);
+   border: 5px solid black;
+   width:250px;
+   height:100px;
+   left:950px;
+   bottom:90px;
+   text-align: center;
+   display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.Container_Ubicacion a{
+  position: relative;
+  color: white;
+  font-size:20px;
+  text-align: center;
+  top:10px;
+}
+
+.Container_Ubicacion p{
+
+position: relative;  
+color: aliceblue;
+text-decoration: none;
+font-size:20px;
+top:2px;
+
+}
+
+.Container_Att{
+  position: relative;
+   background-color: rgb(132, 6, 250);
+   border: 5px solid black;
+   width:250px;
+   height:100px;
+   left:670px;
+   bottom:200px;
+   text-align: center;
+   display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.Container_Att p{
+
+position: relative;  
+color: aliceblue;
+text-decoration: none;
+font-size:15px;
+top:2px;
+}
+
+.Container_Faceboock{
+  position: relative;
+   background-color: rgb(55, 0, 255);
+   border: 5px solid black;
+   width:250px;
+   height:100px;
+   left:670px;
+   bottom:190px;
+   text-align: center;
+   display: flex;
+  flex-direction: column;
+  transition: all 300ms;  
+}
+
+.Container_Faceboock a{
+   position: relative;
+  color: rgb(0, 0, 0);
+  font-size:25px;
+  top:10px;  
+}
+
+.Container_Faceboock p{
+position: relative;
+color: white;
+font-size:20px;
+bottom:5px;
+}
+
+.container_XboxOneS{
+  position: relative;
+  width:250px;
+  height:250px;
+  bottom:50px;
+  left:50px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_XboxOneS img{
+  position:relative;
+  width:250px;
+  height:250px;
+}
+
+.Xboxone {
+ position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:150px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+}
+
+
+.Xboxone p{
+  color: rgb(255, 255, 255);
+
+}
+
+.Comprar1{
+ position: relative;
+ background-color: rgb(16, 240, 16);
+ border: 2px solid rgb(255, 253, 253);
+ bottom:10px;
+ width:100px;
+ height:35px;
+ cursor: pointer;
+}
+  
+
+.container_Playstation{
+  position: relative;
+  width:250px;
+  height:250px;
+  left:380px;
+  bottom:310px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+
+.container_Playstation img{
+  position: relative;
+  width:250px;
+  height:250px;
+}
+
+
+.Playstation4{
+ position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:150px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+}
+
+.Playstation4 p{
+color: white;
+font-size:15px;
+}
+
+.Comprar2{
+  position: relative;
+ background-color: rgb(16, 240, 16);
+ border: 2px solid rgb(255, 253, 253);
+ bottom:10px;
+ width:100px;
+ height:35px;
+ cursor: pointer;
+
+}
+
+.container_Nintendoswicht{
+  position: relative;
+  width:250px;
+  height:248px;
+  bottom:568px;
+  left:690px;
+  border: 5px solid black;  
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+
+}
+
+.container_Nintendoswicht img{
+ position: relative;
+  width:250px;
+  height:248px;
+ 
+}
+
+.Nswicht{
+
+ position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:150px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+
+}
+
+.Nswicht p{
+color: white;
+font-size:15px;
+}
+
+.Comprar3{
+ position: relative;
+ background-color: rgb(16, 240, 16);
+ border: 2px solid rgb(255, 253, 253);
+ bottom:10px;
+ width:100px;
+ height:35px;
+ cursor: pointer;
+}
+
+.container_NintendoWii{
+  position: relative;
+  width:250px;
+  height:248px;
+  bottom:828px;
+  left:1010px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  font-size:15px;
+  transition: all 300ms;
+}
+
+.container_NintendoWii img{
+  position: relative;
+  width:250px;
+  height:248px;
+ 
+}
+
+
+.NWII{
+
+ position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:150px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+
+}
+
+
+.NWII p{
+color: white;
+font-size:14px;
+}
+
+
+.Comprar4{
+ position: relative;
+ background-color: rgb(16, 240, 16);
+ border: 2px solid rgb(255, 253, 253);
+ bottom:10px;
+ width:100px;
+ height:35px;
+ cursor: pointer;
+}
+
+.container_Xbox360{
+
+ position: relative;
+ width:250px;
+ height:250px;
+ bottom:580px;
+ left:50px;
+ border: 5px solid black;
+ display: flex;
+ flex-direction: column;
+ transition: all 300ms;
+}
+
+
+.container_Xbox360 img{
+ position: relative;
+  width:250px;
+  height:250px;
+ 
+}
+
+.Xbox360{
+ position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:150px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+}
+
+.Xbox360 p{
+ color: white;
+ font-size:14px;
+}
+
+.Comprar5{
+ position: relative;
+ background-color: rgb(16, 240, 16);
+ border: 2px solid rgb(255, 253, 253);
+ bottom:10px;
+ width:100px;
+ height:35px;
+ cursor: pointer;
+}
+
+.container_ControlXboxone {
+
+position: relative;
+width:250px;
+height:250px;
+left:380px;
+bottom:838px;
+border: 5px solid black;
+display: flex;
+flex-direction: column;
+transition: all 300ms;
+}
+
+
+
+.container_ControlXboxone img{
+  position: relative;
+  width:250px;
+  height:250px;
+}
+
+.Xboxonecontrol{
+ position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ font-size:17px;
+ width:250px;
+ height:300px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+}
+
+
+.Xboxonecontrol p{
+ color: white;
+ font-size:14px;
+}
+
+.Comprar6{
+ position: relative;
+ background-color: rgb(16, 240, 16);
+ border: 2px solid rgb(255, 253, 253);
+ bottom:10px;
+ width:100px;
+ height:35px;
+ cursor: pointer;
+}
+
+.container_ControlPlaystation{
+
+  position: relative;
+  width:250px;
+  height:248px;
+  bottom:1098px;
+  left:690px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+
+.container_ControlPlaystation img{
+ position: relative;
+  width:250px;
+  height:248px;
+}
+
+.Playstationcontrol{
+
+position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:200px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+
+}
+
+.Playstationcontrol p{
+ color: white;
+  font-size:14px;
+}
+
+.Comprar7{
+ position: relative;
+ background-color: rgb(16, 240, 16);
+ border: 2px solid rgb(255, 253, 253);
+ bottom:10px;
+ width:100px;
+ height:35px;
+ cursor: pointer;
+}
+
+.container_ControlXbox360{
+ position: relative;
+  width:250px;
+  height:248px;
+  bottom:1355px;
+  left:1010px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_ControlXbox360 img{
+  position: relative;
+  width:250px;
+  height:248px;
+}
+
+.ControlXbox360{
+ position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:200px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+}
+
+
+.ControlXbox360 p{
+  color: white;
+  font-size:14px;
+}
+
+.Comprar8{
+ position: relative;
+ background-color: rgb(16, 240, 16);
+ border: 2px solid rgb(255, 253, 253);
+ bottom:10px;
+ width:100px;
+ height:35px;
+ cursor: pointer;
+}
+
+.container_ControlWii{
+
+  position: relative;
+  width:250px;
+  height:250px;
+  bottom:1150px;
+  left:50px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_ControlWii img{
+  position: relative;
+ width:250px;
+  height:250px;
+}
+
+.NWII{
+ position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:200px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+}
+
+.NWII p{
+  color: white;
+   font-size:15px;
+}
+
+.Comprar9{
+  position: relative;
+  background-color: rgb(16, 240, 16);
+  border: 2px solid rgb(255, 253, 253);
+  bottom:10px;
+  width:100px;
+  height:35px;
+  cursor: pointer;
+}
+
+.container_Controlswicht{
+position: relative;
+width:250px;
+height:250px;
+left:380px;
+bottom:1410px;
+font-size:15px;
+border: 5px solid black;
+display: flex;
+flex-direction: column;
+transition: all 300ms;
+}
+
+.container_Controlswicht img{
+  position: relative;
+  width:250px;
+  height:250px;
+}
+
+.NSWICHT{
+ position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:200px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+ 
+}
+
+.NSWICHT p{
+  color: white;
+}
+
+.Comprar10{
+  position: relative;
+  background-color: rgb(16, 240, 16);
+  border: 2px solid rgb(255, 253, 253);
+  bottom:10px;
+  width:100px;
+  height:35px;
+  cursor: pointer;
+}
+
+.container_Cajadepilas{
+  position: relative;
+  width:250px;
+  height:248px;
+  bottom:1669px;
+  left:690px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_Cajadepilas img{
+  position: relative;
+width:250px;
+  height:248px;
+}
+
+.Cajapilas{
+  position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:200px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+}
+
+.Cajapilas p{
+  color: white;
+}
+
+
+.Comprar11{
+  position: relative;
+  background-color: rgb(16, 240, 16);
+  border: 2px solid rgb(255, 253, 253);
+  bottom:10px;
+  width:100px;
+  height:35px;
+  cursor: pointer;
+}
+
+
+.container_Cargador360{
+ 
+  position: relative;
+  width:250px;
+  height:248px;
+  bottom:1927px;
+  left:1010px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+} 
+
+.container_Cargador360 img{
+ position: relative; 
+width:250px;
+  height:248px;
+}
+
+.Cargador{
+ position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:200px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+
+}
+
+.Cargador p{
+  color: white;
+}
+
+.Comprar12{
+  position: relative;
+  background-color: rgb(16, 240, 16);
+  border: 2px solid rgb(255, 253, 253);
+  bottom:10px;
+  width:100px;
+  height:35px;
+  cursor: pointer;
+}
+
+.container_Discoduro{
+
+  position: relative;
+  width:250px;
+  height:250px;
+  bottom:1670px;
+  left:50px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_Discoduro img{
+position: relative;
+ width:250px;
+ height:250px;
+}
+
+.Dss{
+ position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:200px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+
+}
+
+.Dss p{
+ color: white;
+}
+
+.Comprar13{
+   position: relative;
+  background-color: rgb(16, 240, 16);
+  border: 2px solid rgb(255, 253, 253);
+  bottom:10px;
+  width:100px;
+  height:35px;
+  cursor: pointer;
+}
+
+.container_FuentedepoderSlim{
+position: relative;
+width:250px;
+height:250px;
+left:380px;
+bottom:1927px;
+font-size:15px;
+border: 5px solid black;
+display: flex;
+flex-direction: column;
+transition: all 300ms;
+}
+
+.container_FuentedepoderSlim img{
+width: 250px;
+height: 250px;
+}
+
+.Fuenteslim{
+  position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:200px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+}
+
+.Fuenteslim p{
+ color: white;
+}
+
+.Comprar14{
+  position: relative;
+  background-color: rgb(16, 240, 16);
+  border: 2px solid rgb(255, 253, 253);
+  bottom:10px;
+  width:100px;
+  height:35px;
+  cursor: pointer;
+}
+
+.container_FuentedepoderSlimE{
+
+  position: relative;
+  width:250px;
+  height:248px;
+  bottom:415px;
+  left:300px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_FuentedepoderSlimE img{
+  width:250px;
+  height:248px;
+}
+
+.FuenteslimE{
+  position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:200px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+}
+
+.FuenteslimE p{
+ color: white;
+}
+
+.Comprar15{
+   position: relative;
+  background-color: rgb(16, 240, 16);
+  border: 2px solid rgb(255, 253, 253);
+  bottom:10px;
+  width:100px;
+  height:35px;
+  cursor: pointer;
+}
+
+.container_FuentedepoderCore{
+  position: relative;
+  width:250px;
+  height:248px;
+  bottom:673px;
+  left:625px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_FuentedepoderCore img{
+  width:250px;
+  height:248px;
+}
+
+.FuenteCore{
+  position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 5px solid black;
+ width:250px;
+ height:200px;
+ right:5px; 
+ text-align: center;
+ cursor: pointer;
+}
+
+.FuenteCore p{
+ color: white;
+}
+
+.Comprar16{
+   position: relative;
+  background-color: rgb(16, 240, 16);
+  border: 2px solid rgb(255, 253, 253);
+  bottom:10px;
+  width:100px;
+  height:35px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:720px){
+
+body{
+ background: linear-gradient(to right, #1ed60d , #2a0bda );
+}
+
+
+.Container_Menu{
+position: relative;
+background-color:blue;
+width:250px;
+height:100px;
+left:100px;
+border: 5px solid black;
+top:50px;
+transition: all 300ms;
+}
+
+
+
+.Texto{
+position: relative;
+color:white;
+text-align: center;
+font-size:30px;
+left:10px;
+top:30px;
+display: block;
+}
+
+.Container_Advertencia{
+    position: relative;
+    top:20px;
+    background-color: rgb(132, 6, 250);
+    border: 5px solid black;
+    width:320px;
+    height:200px;
+    left:65px;
+    transition: all 300ms;
+}
+
+.Termino{
+ position: relative;
+ color:white;
+ text-align: center;
+ font-size:17px;
+ top:30px;
+}
+
+.Container_volver{
+ position: relative;
+ background-color: rgb(0, 0, 0);
+ border: 3px solid rgb(255, 255, 255);
+ width:100px;
+ height:50px;
+ text-align: center;
+ top:580px;
+ left:80px;
+ transition: all 300ms;
+}
+
+.Container_volver a{
+position: relative;  
+color: aliceblue;
+font-size:25px;
+text-decoration: none;
+top:15px;
+}
+
+
+.container_XboxOneS{
+    
+  position: relative;
+  width:250px;
+  height:200px;
+  top:180px;
+  left:103px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_XboxOneS img{
+ width:250px;
+  height:200px;
+}
+
+.container_Playstation{
+  position: relative;
+  width:250px;
+  height:200px;
+  left:103px;
+  top:347px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_Playstation img{
+  width:250px;
+  height:200px;
+}
+
+.container_Nintendoswicht{
+
+  position: relative;
+  width:250px;
+  height:200px;
+  top:508px;
+  left:103px;
+  border: 5px solid black;  
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_Nintendoswicht img{
+ width:250px;
+  height:200px;
+}
+
+
+.container_NintendoWii{
+  position: relative;
+  width:250px;
+  height:200px;
+  top:670px;
+  left:103px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+
+}
+
+.container_NintendoWii img{
+ width:250px;
+  height:200px;
+}
+
+.container_Xbox360{
+
+ position: relative;
+ width:250px;
+ height:200px;
+ top:865px;
+ left:103px;
+ border: 5px solid black;
+ display: flex;
+ flex-direction:column;
+ transition: all 300ms;
+}
+
+.container_Xbox360 img{
+  width:250px;
+  height:200px;
+}
+
+.container_ControlXboxone{
+
+
+ position: relative;
+ width:250px;
+ height:200px;
+ top:1027px;
+ left:103px;
+ border: 5px solid black;
+ display: flex;
+ flex-direction: column;
+ transition: all 300ms;
+}
+
+
+.container_ControlXboxone img{
+width:250px;
+height:200px;
+}
+
+
+
+.container_ControlPlaystation{
+
+  position: relative;
+  width:250px;
+  height:200px;
+  top:1180px;
+  left:103px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+
+.container_ControlPlaystation img{
+  width:250px;
+  height:200px;
+}
+
+.container_ControlXbox360{
+position: relative;
+width:250px;
+height:200px;
+top:1337px;
+left:103px;
+border: 5px solid black;
+display: flex;
+flex-direction: column;
+transition: all 300ms;
+}
+
+
+.container_ControlXbox360 img{
+  width:250px;
+  height:200px;
+}
+
+.container_ControlWii{
+
+  position: relative;
+  width:250px;
+  height:200px;
+  top:1480px;
+  left:103px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_ControlWii img{
+ width:250px;
+  height:200px;
+}
+
+
+.container_Controlswicht{
+position: relative;
+width:250px;
+height:200px;
+left:103px;
+top:1678px;
+border: 5px solid black;
+display: flex;
+flex-direction: column;
+transition: all 300ms;
+}
+
+.container_Controlswicht img{
+width:250px;
+height:200px;
+}
+
+.container_Cajadepilas{
+
+  position: relative;
+  width:250px;
+  height:200px;
+  top:1857px;
+  left:103px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_Cajadepilas img{
+ width:250px;
+  height:200px;
+}
+
+.container_Cargador360{
+
+  position: relative;
+  width:250px;
+  height:200px;
+  top:2026px;
+  left:103px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_Cargador360 img{
+  width:250px;
+  height:200px;
+ 
+}
+
+.container_Discoduro{
+
+  position: relative;
+  width:250px;
+  height:200px;
+  top:2196px;
+  left:104px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_Discoduro img{
+ width:250px;
+ height:200px;
+}
+
+.container_FuentedepoderSlim{
+  
+position: relative;
+width:250px;
+height:250px;
+left:105px;
+top:2360px;
+border: 5px solid black;
+display: flex;
+flex-direction: column;
+transition: all 300ms;
+}
+
+.container_FuentedepoderSlim img{
+width:250px;
+height:250px;
+}
+
+.container_FuentedepoderSlimE{
+  
+  position: relative;
+  width:250px;
+  height:200px;
+  bottom:-7px;
+  left:-5px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms; 
+} 
+
+.container_FuentedepoderSlimE img{
+  width:250px;
+  height:200px;
+
+}
+
+.container_FuentedepoderCore{
+ position: relative;
+  width:250px;
+  height:200px;
+  top:170px;
+  left:-5px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+}
+
+.container_FuentedepoderCore img{
+width:250px;
+height:200px;
+}
+
+
+.Container_Nada{
+position: relative;
+top:1000px;
+}
+
+
+.Container_Ubicacion{
+   position: relative;
+   background-color: rgb(132, 6, 250);
+   border: 5px solid black;
+   top:145px;
+   height:100px;
+   left:100px;
+   text-align: center;
+}
+
+.Container_Ubicacion a{
+  position: relative;
+  color: white;
+  font-size:20px;
+  text-align: center;
+  top:10px;
+}
+
+.Container_Ubicacion p{
+
+position: relative;  
+color: aliceblue;
+text-decoration: none;
+font-size:20px;
+top:2px;
+
+}
+
+.Container_Att{
+  position: relative;
+   background-color: rgb(132, 6, 250);
+   border: 5px solid black;
+   width:250px;
+   height:100px;
+   left:100px;
+   bottom:80px;
+   text-align: center;
+}
+
+.Container_Att p{
+
+position: relative;  
+color: aliceblue;
+text-decoration: none;
+font-size:15px;
+top:2px;
+}
+
+
+.Container_Faceboock{
+  position: relative;
+   background-color: rgb(55, 0, 255);
+   border: 5px solid black;
+   width:200px;
+   height:100px;
+   left:210px;
+   top:80px;
+   text-align: center;
+   display: flex;
+  flex-direction: column;
+  transition: all 300ms;  
+}
+
+.Container_Faceboock a{
+   position: relative;
+  color: rgb(0, 0, 0);
+  font-size:25px;
+  top:10px;  
+}
+
+.Container_Faceboock p{
+position: relative;
+color: white;
+font-size:20px;
+bottom:5px;
+}
+
+
+}
+

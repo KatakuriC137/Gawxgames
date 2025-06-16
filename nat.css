@@ -1,0 +1,45 @@
+/* CSS básico */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image .8s ease;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+    color: white;
+  }
+  .carousel {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    perspective: 1000px;
+  }
+  .slide {
+    width: 120px;
+    margin: 0 10px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transition: transform .5s, opacity .5s;
+    opacity: .6;
+  }
+  .slide.active {
+    transform: scale(1.2) translateZ(100px);
+    opacity: 1;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .overlay { padding: 1rem; }
+    .carousel { bottom: 1rem; }
+    .slide { width: 80px; margin: 0 5px; }
+  }

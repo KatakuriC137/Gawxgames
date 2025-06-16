@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Videojuegos GawxGames</title>
+  <link rel="shortcut icon" href="Icon.jpeg" type="image/png" sizes="12*12">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 100%; height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+
+
+
+
+
+    .seccion-inicial {
+      position: relative; width: 100vw; height: 100vh;
+      background: url('Caratula/DantesInfiernofondo.webp') center/cover no-repeat;
+      transition: background 0.8s ease; overflow: hidden;
+    }
+    .superposicion {
+      position: absolute; top: 5%; left: 5%;
+      background: rgba(0,0,0,0.5); padding: 1rem; border-radius: 8px;
+      max-width: 35%; color: #fff; z-index: 2;
+    }
+    .superposicion h1 { font-size: 3rem; margin-bottom: .5rem; }
+    .superposicion p {
+      font-size: 1.3rem; line-height: 1.5; margin-bottom: 1rem;
+    }
+    .botones button {
+      padding: .6rem 1.2rem; margin-right: .5rem;
+      border: none; border-radius: 4px;
+      background: #e50914; color: #fff;
+      font-size: 1.1rem; cursor: pointer;
+      transition: background .3s;
+    }
+    .botones button:hover { background: #b81d24; }
+    .carrusel {
+      position: absolute; bottom: 8%;
+      left: 50%; transform: translateX(-50%);
+      width: 900px; height: 240px;
+      perspective: 1500px; z-index: 1;
+    }
+    .diapositiva {
+      position: absolute; top: 0; left: 50%;
+      width: 160px; height: 220px; margin-left: -80px;
+      transform-origin: center center;
+      border-radius: 12px; overflow: hidden;
+      cursor: pointer;
+    }
+    .diapositiva img {
+      width: 100%; height: 100%;
+      object-fit: contain; display: block;
+    }
+    @media (max-width: 1024px) {
+      html, body { overflow: auto; }
+      .seccion-inicial { height: 100vh; }
+      .superposicion { max-width: 60%; padding: .8rem; }
+      .superposicion h1 { font-size: 2.5rem; }
+      .superposicion p { font-size: 1.2rem; }
+      .carrusel {
+        position: relative; bottom: auto; left: auto; transform: none;
+        width: 100%; height: auto; margin: 1rem auto;
+        display: flex; justify-content: flex-start;
+        gap: 2rem; overflow-x: auto; padding: 1rem;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+      }
+      .diapositiva {
+        position: relative !important; margin: 0 !important;
+        flex: 0 0 auto; width: 45%; max-width: 220px;
+        height: auto; transform: none !important;
+        scroll-snap-align: center;
+      }
+      .diapositiva img { height: auto; }
+      .diapositiva.activa {
+        transform: scale(1.05) !important;
+      }
+    }
+    @media (max-width: 600px) {
+      .superposicion {
+        max-width: 90%; margin: 1rem auto;
+        position: relative; top: 0; left: 0;
+      }
+      .superposicion h1 { font-size: 2rem; }
+      .superposicion p { font-size: 1rem; }
+      .botones button {
+        font-size: 1rem; padding: .5rem 1rem;
+      }
+      .diapositiva { width: 60%; max-width: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+                         
+
+
+  <div class="seccion-inicial" id="seccion">
+    <div class="superposicion">
+      <h1 id="titulo-peli"></h1>
+      <p id="descripcion-peli"></p>
+      <div class="botones">
+        <a href="MenuGawxgames.html"><button>Regresar al menu</button></a>
+      </div>
+    </div>
+    <div class="carrusel" id="carrusel">
+      <!-- Tus ~50 diapositivas aquí -->
+      <div class="diapositiva"
+           data-titulo="Burnout 3 Takedown"
+           data-descripcion=" ¡Velocidad, choques y adrenalina pura! El rey de las carreras destructivas."
+           data-fondo="url('Caratula/Burnout3TakedownFondo.webp')">
+        <a href="Leonardo/Burnout3Takedown.html">
+          <img src="Caratula/Burnout3TakedownCaratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+
+  <div class="diapositiva" 
+           data-titulo="Dante's Infierno"
+           data-descripcion=" Desciende al infierno con tu guadaña y enfrenta los pecados más oscuros."
+           data-fondo="url('Caratula/DantesInfiernoFondo.webp')">
+        <a href="Dante'sInferno.html">
+          <img src="Caratula/Dante'sInfiernoCaratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+<div class="diapositiva" 
+           data-titulo="Gta IV"
+           data-descripcion="Vive el sueño americano... a tu manera. Crimen, traición y libertad en Liberty City."
+           data-fondo="url('Caratula/GTAIVFondo.webp')">
+        <a href="Leonardo/GTA IV.html">
+          <img src="Caratula/GTAIVCaratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+      
+<div class="diapositiva" 
+           data-titulo="Gta San Andreas"
+           data-descripcion="“Grove Street 4 Life”. Acción, pandillas y caos por todo el estado"
+           data-fondo="url('Caratula/GTASanandreasFondo.webp')">
+        <a href="Leonardo/GTA SanAndreas.html">
+          <img src="Caratula/GTASanAndreasCaratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+
+
+      <div class="diapositiva" 
+           data-titulo="Gta V"
+           data-descripcion="Tres criminales, un mundo gigante y millones de formas de hacer dinero... o desastre."
+           data-fondo="url('Caratula/GTAVFondo.webp')">
+        <a href="Leonardo/GTA V.html">
+          <img src="Caratula/GTAVCaratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+      
+
+
+<div class="diapositiva" 
+           data-titulo="Gears Of War"
+           data-descripcion="Toma tu lancer y enfréntate a los Locust en esta brutal guerra por la humanidad."
+           data-fondo="url('Caratula/Gow1Fondo.jpg')">
+        <a href="GearsOfWar.html">
+          <img src="Caratula/Gow1Caratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+
+<div class="diapositiva" 
+           data-titulo="Gears Of War 2"
+           data-descripcion=" Más épico, más sangriento, más Gears. La guerra se intensifica en el subsuelo."
+           data-fondo="url('Caratula/Gow2Fondo.webp')">
+        <a href="GearsOfWar2.html">
+          <img src="Caratula/CaratulaGow2Delantera.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+      <div class="diapositiva" 
+           data-titulo="Gears Of War 3"
+           data-descripcion="El destino del planeta Sera está en tus manos. Final legendario."
+           data-fondo="url('Caratula/Gow3Fondo.webp')">
+        <a href="GearsOfWar3.html">
+          <img src="Caratula/Gow3Caratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+      <div class="diapositiva" 
+           data-titulo="Gears Of War Judgment"
+           data-descripcion="Antes de la leyenda, hubo juicio. Conoce el pasado de Baird y Cole."
+           data-fondo="url('Caratula/GowJudgmentFondo.webp')">
+        <a href="GearsOfWarJudgmet.html">
+          <img src="Caratula/GowJudgmentCaratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+      <div class="diapositiva" 
+           data-titulo="Gears Of War 4"
+           data-descripcion="Una nueva generación entra en batalla. Nuevos enemigos, misma furia."
+           data-fondo="url('Caratula/Gow4Fondo2.webp')">
+        <a href="GearsOfWar4.html">
+          <img src="Caratula/Gow4Caratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+      <div class="diapositiva" 
+           data-titulo="Gears Of War 5"
+           data-descripcion="La lucha se vuelve personal. Descubre los secretos detrás del origen Locust."
+           data-fondo="url('Caratula/Gow5Fondo.webp')">
+        <a href="GearsOfWar5.html">
+          <img src="Caratula/Gow5Caratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+
+<div class="diapositiva" 
+           data-titulo="Most wanted 2012"
+           data-descripcion="Corre, escapa, domina. Sé el más buscado en Fairhaven."
+           data-fondo="url('Caratula/NeedforSpeedMostWanted(2012)Fondo.webp')">
+        <a href="NeedForSpeedMonswanted2012.html">
+          <img src="Caratula/NeedforSpeedMostWanted(2012)Caratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+      
+<div class="diapositiva" 
+           data-titulo="Dead Island"
+           data-descripcion=" Vacaciones... con zombis. Sobrevive como puedas en el paraíso infectado."
+           data-fondo="url('Caratula/DeadIslandFondo.webp')">
+        <a href="Leonardo/DeadIsland.html">
+          <img src="Caratula/DeadIslandCaratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+
+      <div class="diapositiva" 
+           data-titulo="Ninja Gaiden 2"
+           data-descripcion="Ryu Hayabusa desata un torbellino de sangre y katana. Puro frenesí ninja."
+           data-fondo="url('Caratula/NinjaGaiden2Fondo.webp')">
+        <a href="Leonardo/NinjaGaiden2.html">
+          <img src="Caratula/NinjaGaiden2Caratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+      
+<div class="diapositiva" 
+           data-titulo="Ninja Gaiden 3"
+           data-descripcion="La oscuridad lo consume. Ryu lucha no solo contra enemigos, sino contra sí mismo."
+           data-fondo="url('Caratula/NinjaGaiden3Fondo.webp')">
+        <a href="Leonardo/NinjaGaiden3.html">
+          <img src="Caratula/NinjaGaiden3Caratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+      
+<div class="diapositiva" 
+           data-titulo="The Legend of Zelda Majora’s Mask"
+           data-descripcion=" El reloj avanza. Tienes 3 días para salvar un mundo condenado."
+           data-fondo="url('Caratula/TheLegendofZeldaMajora’sMaskFondo.webp')">
+        <a href="Leonardo/zeldaMajoraMask.html">
+          <img src="Caratula/TheLegendofZeldaMajora’sMasCaratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+<div class="diapositiva" 
+           data-titulo="Call Of Duty Ghost"
+           data-descripcion="El mundo cayó... pero nacieron los Ghosts. Táctica y guerra total."
+           data-fondo="url('Caratula/CallOfDutyGhostFondo.webp')">
+        <a href="Leonardo/CallOfDutyGhost.html">
+          <img src="Caratula/CallOfDutyGhostCaratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+<div class="diapositiva" 
+           data-titulo="Minecraft"
+           data-descripcion="¡Imagina, construye, sobrevive! Un universo de bloques sin límites."
+           data-fondo="url('Caratula/McFondo.webp')">
+        <a href="Minecraft.html">
+          <img src="Caratula/MCCaratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+
+      <div class="diapositiva" 
+           data-titulo="Resident Evil 5"
+           data-descripcion="África arde en caos biológico. Acción y horror cooperativo al máximo."
+           data-fondo="url('Caratula/RE5Fondo.jpg')">
+        <a href="ResidentEvil5.html">
+          <img src="Caratula/RE5Caratula.jpg" alt="Burnout 3">
+        </a>
+      </div>
+
+
+      <div class="diapositiva" 
+           data-titulo="Street Fighter 6"
+           data-descripcion=" ¡Lucha con estilo! Nuevas mecánicas, gráficos impactantes y puro combate callejero."
+           data-fondo="url('Caratula/SF6Fondo.webp')">
+        <a href="StreetFighter6.html">
+          <img src="Caratula/SF6Caratula.webp" alt="Burnout 3">
+        </a>
+      </div>
+
+
+
+       <div class="diapositiva" 
+           data-titulo="?"
+           data-descripcion="???"
+           data-fondo="url('Caratula/.webp')">
+        <a href="Teveo.html">
+          <img src="cNegro.png" alt="Burnout 3">
+        </a>
+      </div>
+
+
+
+
+       <div class="diapositiva" 
+           data-titulo=""
+           data-descripcion="Fin."
+           data-fondo="url('cNegro.png')">
+        <a href="#.html">
+          <img src="cNegro.png" alt="Burnout 3">
+        </a>
+      </div>
+
+
+      <!-- … resto idéntico -->
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    const diapositivas = Array.from(document.querySelectorAll('.diapositiva'));
+    const seccion      = document.getElementById('seccion');
+    const titulo       = document.getElementById('titulo-peli');
+    const desc         = document.getElementById('descripcion-peli');
+    const carruselEl   = document.getElementById('carrusel');
+    let indiceActual   = 0;
+    let touchStartX    = 0;
+
+    // Calcular y animar 3D (solo escritorio)
+    function render3D() {
+      if (window.innerWidth <= 1024) return;
+      const ancho = diapositivas[0].offsetWidth;
+      diapositivas.forEach((d,i) => {
+        const delta = i - indiceActual;
+        gsap.to(d, {
+          x: delta * ancho * 1.2,
+          z: -Math.abs(delta)*80,
+          rotationY: delta*25,
+          scale: i === indiceActual ? 1.3 : 1,
+          duration: 0.8, ease: 'power3.out'
+        });
+      });
+    }
+
+    // Actualiza fondo, texto y clase activa
+    function actualizarInfo() {
+      const actual = diapositivas[indiceActual];
+      gsap.to(seccion, {
+        backgroundImage: actual.dataset.fondo,
+        duration: 0.8, ease: 'power3.out'
+      });
+      titulo.textContent = actual.dataset.titulo;
+      desc.textContent   = actual.dataset.descripcion;
+      diapositivas.forEach(d => d.classList.remove('activa'));
+      actual.classList.add('activa');
+      // Centrar en responsive con scrollLeft
+      if (window.innerWidth <= 1024) {
+        const centroContainer = carruselEl.clientWidth / 2;
+        const centroSlide     = actual.offsetLeft + actual.clientWidth/2;
+        carruselEl.scrollTo({
+          left: centroSlide - centroContainer,
+          behavior: 'smooth'
+        });
+      }
+    }
+
+    // Cambia índice y actualiza
+    function irA(nuevo) {
+      indiceActual = (nuevo + diapositivas.length) % diapositivas.length;
+      actualizarInfo();
+      render3D();
+    }
+
+    // Debounce utility para scroll
+    function debounce(fn, delay) {
+      let timer;
+      return (...args) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => fn(...args), delay);
+      };
+    }
+
+    // Al hacer scroll en responsive, detecta slide central
+    carruselEl.addEventListener('scroll',
+      debounce(() => {
+        if (window.innerWidth > 1024) return;
+        const centro = carruselEl.scrollLeft + carruselEl.clientWidth/2;
+        let mejorIdx = indiceActual, minDiff = Infinity;
+        diapositivas.forEach((d,i) => {
+          const diff = Math.abs((d.offsetLeft + d.clientWidth/2) - centro);
+          if (diff < minDiff) { minDiff = diff; mejorIdx = i; }
+        });
+        if (mejorIdx !== indiceActual) {
+          indiceActual = mejorIdx;
+          actualizarInfo();
+        }
+      }, 100)
+    );
+
+    // Listeners de click, teclas y touch
+    diapositivas.forEach((d,i) => d.addEventListener('click', () => irA(i)));
+    document.addEventListener('keydown', e => {
+      if (e.key==='ArrowRight') irA(indiceActual+1);
+      if (e.key==='ArrowLeft')  irA(indiceActual-1);
+    });
+    carruselEl.addEventListener('touchstart', e => {
+      touchStartX = e.touches[0].clientX;
+    });
+    carruselEl.addEventListener('touchend', e => {
+      const delta = e.changedTouches[0].clientX - touchStartX;
+      if (delta < -40) irA(indiceActual+1);
+      if (delta >  40) irA(indiceActual-1);
+    });
+
+    window.addEventListener('load',  () => irA(0));
+    window.addEventListener('resize', render3D);
+  </script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.Body {
+  position: relative;
+  background: linear-gradient(305deg, #ff9900, #cc3300, #993300);
+  z-index: 0;
+}
+
+/* Menú */
+.Menu {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  z-index: 10;
+}
+.Menu img {
+  width: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.Menu:hover img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px #ff0033)
+          drop-shadow(0 0 20px #ff3333)
+          drop-shadow(0 0 30px #ff3333);
+}
+
+/* Contenedor principal */
+.Principal {
+  left: 200px;
+  top: 150px;
+  width: 60%;
+  height: 50%;
+  position: relative;
+  display: block;
+  background: wheat;
+  border-radius: 15px;
+  border: 2px solid #ffcc00;
+  box-shadow: 0 0 8px rgb(238, 255, 0);
+  backdrop-filter: blur(0.5px) contrast(135%) brightness(125%);
+  -webkit-backdrop-filter: blur(0.5px) contrast(135%) brightness(125%);
+  color: white;
+  z-index: 20;
+  padding: 20px;
+}
+
+/* Iconos y Contacto */
+.Iconos {
+  display: flex;
+  margin-top: 45px;
+  margin-left: 180px;
+}
+.Icono img {
+  width: 80px;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.Icono:hover img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px #990000)
+          drop-shadow(0 0 20px #cc0000)
+          drop-shadow(0 0 30px #ff3300);
+}
+.Contacto {
+  text-align: center;
+  font-weight: bold;
+  margin-right: 130px;
+  margin-top: 10px;
+  width: 90%;
+}
+.Contacto a {
+  text-decoration: none;
+  font-family: "Single Day", cursive;
+  font-size: 30px;
+  color: black;
+  letter-spacing: 2px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.Contacto a::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background: #000;
+  left: 0;
+  bottom: -6px;
+  position: absolute;
+  transition: width 0.5s ease;
+}
+.Contacto a:hover::after {
+  width: 100%;
+}
+
+/* Imagen Animada */
+.ImagenS {
+  position: absolute;
+  left: 940px;
+  top: 160px;
+  z-index: 30;
+}
+.Imagen img {
+  width: 220px;
+  height: 340px;
+}
+
+/* Aviso */
+.Aviso {
+  position: absolute;
+  left: 50px;
+  top: 380px;
+  z-index: 30;
+}
+.Aviso p {
+  color: #000;
+  border: 1px solid #000;
+  background-color: wheat;
+  border-radius: 15px;
+  font-family: "Single Day", cursive;
+  font-size: 20px;
+  height: 80px;
+  width: 200px;
+  text-align: center;
+}
+.Aviso img {
+  width: 120px;
+  height: 150px;
+}
+
+
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow: auto;
+  }
+
+  /* Centrar menú */
+  .Menu {
+    left: 20px;
+    top: 20px;
+  }
+  .Menu img {
+    width: 50px;
+  }
+
+  /* Principal ocupa casi todo el ancho y se centra */
+  .Principal {
+    position: static;
+    width: 90%;
+    left: 0%;
+    transform: translateX(-10%);
+    top: auto;
+    margin: 20px auto;
+    padding: 15px;
+    height: auto;
+  }
+
+  /* Iconos en columna y centrados */
+  .Iconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    margin-left: 0;
+  }
+  .Icono img {
+    width: 60px;
+  }
+  .Contacto {
+    margin: 10px 0;
+  }
+  .Contacto a {
+    font-size: 24px;
+  }
+
+  /* Imagen animada más pequeña y centrada */
+  .ImagenS {
+    position: static;
+    margin: 0 auto 20px;
+    left: auto;
+    top: auto;
+    z-index: 30;
+    text-align: center;
+  }
+  .Imagen img {
+    width: 100px;
+    height: auto;
+  }
+
+  /* Aviso abajo y centrado */
+  .Aviso {
+    position: static;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .Aviso p {
+    width: 80%;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+  }
+  .Aviso img {
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+  }
+}

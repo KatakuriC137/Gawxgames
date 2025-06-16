@@ -1,0 +1,45 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body, html {
+  height: 100%;
+  background-color: #000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+
+.face {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  
+  transition: transform 0.3s ease;
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+  .face:hover {
+    transform: scale(1.05);
+  }
+}
+
+
+@media (max-width: 400px) {
+  .face {
+    max-width: 100vw;
+    max-height: 80vh;
+  }
+}
