@@ -1,2 +1,2 @@
 Hola a todos
-<a href="Actualizaciones.html" id="selected"> Prox Actualizaciones</a>
+<a href="Bienvend@AGawxGames.html" id="selected"> Prox Actualizaciones</a>
