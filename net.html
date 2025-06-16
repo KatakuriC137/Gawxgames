@@ -110,7 +110,7 @@
       </div>
     </div>
     <div class="carrusel" id="carrusel">
-      <!-- Tus ~50 diapositivas aquí -->
+     
       <div class="diapositiva"
            data-titulo="Burnout 3 Takedown"
            data-descripcion=" ¡Velocidad, choques y adrenalina pura! El rey de las carreras destructivas."
@@ -330,7 +330,7 @@
       </div>
 
 
-      <!-- … resto idéntico -->
+     
     </div>
   </div>
 
@@ -344,7 +344,7 @@
     let indiceActual   = 0;
     let touchStartX    = 0;
 
-    // Calcular y animar 3D (solo escritorio)
+   
     function render3D() {
       if (window.innerWidth <= 1024) return;
       const ancho = diapositivas[0].offsetWidth;
@@ -360,7 +360,7 @@
       });
     }
 
-    // Actualiza fondo, texto y clase activa
+   
     function actualizarInfo() {
       const actual = diapositivas[indiceActual];
       gsap.to(seccion, {
@@ -371,7 +371,7 @@
       desc.textContent   = actual.dataset.descripcion;
       diapositivas.forEach(d => d.classList.remove('activa'));
       actual.classList.add('activa');
-      // Centrar en responsive con scrollLeft
+     
       if (window.innerWidth <= 1024) {
         const centroContainer = carruselEl.clientWidth / 2;
         const centroSlide     = actual.offsetLeft + actual.clientWidth/2;
@@ -382,14 +382,14 @@
       }
     }
 
-    // Cambia índice y actualiza
+  
     function irA(nuevo) {
       indiceActual = (nuevo + diapositivas.length) % diapositivas.length;
       actualizarInfo();
       render3D();
     }
 
-    // Debounce utility para scroll
+   
     function debounce(fn, delay) {
       let timer;
       return (...args) => {
@@ -398,7 +398,7 @@
       };
     }
 
-    // Al hacer scroll en responsive, detecta slide central
+    
     carruselEl.addEventListener('scroll',
       debounce(() => {
         if (window.innerWidth > 1024) return;
@@ -415,7 +415,7 @@
       }, 100)
     );
 
-    // Listeners de click, teclas y touch
+  
     diapositivas.forEach((d,i) => d.addEventListener('click', () => irA(i)));
     document.addEventListener('keydown', e => {
       if (e.key==='ArrowRight') irA(indiceActual+1);
