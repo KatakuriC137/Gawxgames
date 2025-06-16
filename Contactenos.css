@@ -18,7 +18,7 @@ html, body {
   z-index: 0;
 }
 
-/* Menú */
+
 .Menu {
   position: absolute;
   top: 30px;
@@ -36,7 +36,7 @@ html, body {
           drop-shadow(0 0 30px #ff3333);
 }
 
-/* Contenedor principal */
+
 .Principal {
   left: 200px;
   top: 150px;
@@ -55,7 +55,7 @@ html, body {
   padding: 20px;
 }
 
-/* Iconos y Contacto */
+
 .Iconos {
   display: flex;
   margin-top: 45px;
@@ -102,7 +102,7 @@ html, body {
   width: 100%;
 }
 
-/* Imagen Animada */
+
 .ImagenS {
   position: absolute;
   left: 940px;
@@ -114,7 +114,7 @@ html, body {
   height: 340px;
 }
 
-/* Aviso */
+
 .Aviso {
   position: absolute;
   left: 50px;
@@ -143,7 +143,7 @@ html, body {
     overflow: auto;
   }
 
-  /* Centrar menú */
+ 
   .Menu {
     left: 20px;
     top: 20px;
@@ -152,7 +152,7 @@ html, body {
     width: 50px;
   }
 
-  /* Principal ocupa casi todo el ancho y se centra */
+  
   .Principal {
     position: static;
     width: 90%;
@@ -164,7 +164,7 @@ html, body {
     height: auto;
   }
 
-  /* Iconos en columna y centrados */
+
   .Iconos {
     display: flex;
     flex-direction: column;
@@ -182,7 +182,7 @@ html, body {
     font-size: 24px;
   }
 
-  /* Imagen animada más pequeña y centrada */
+
   .ImagenS {
     position: static;
     margin: 0 auto 20px;
@@ -196,7 +196,7 @@ html, body {
     height: auto;
   }
 
-  /* Aviso abajo y centrado */
+  
   .Aviso {
     position: static;
     margin: 20px auto;
